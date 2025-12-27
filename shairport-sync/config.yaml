@@ -1,14 +1,15 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Shairport Sync add-on
 version: "4.3.7"
+slug: shairport-sync
 description: Shairport Sync add-on. AirPlay 2 audio player.
-url: "https://github.com/charles-omer/home-assistant-addons/tree/main/shairport-sync"
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
+url: "https://github.com/charles-omer/home-assistant-addons/tree/main/shairport-sync"
 host_network: true
 # audio: true
 init: false
