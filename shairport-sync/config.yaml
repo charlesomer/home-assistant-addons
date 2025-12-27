@@ -9,7 +9,7 @@ arch:
   - aarch64
   - amd64
   - i386
-url: "https://github.com/charles-omer/home-assistant-addons/tree/main/shairport-sync"
+url: "https://github.com/charlesomer/home-assistant-addons/tree/main/shairport-sync"
 host_network: true
 # audio: true
 init: false
