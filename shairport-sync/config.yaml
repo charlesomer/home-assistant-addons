@@ -1,14 +1,4 @@
-options:
-  config_file_content: |
-    # Paste your shairport-sync.conf content here
-
-schema:
-  config_file_content: textarea?
-
-description: |
-  Shairport Sync add-on. AirPlay 2 audio player.
-
-  Edit the contents of the config file directly in the UI.
+description: Shairport Sync add-on. AirPlay 2 audio player.
 name: Shairport Sync
 version: "development"
 slug: shairport-sync
