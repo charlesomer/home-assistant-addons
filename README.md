@@ -4,7 +4,6 @@
 
 ## Add-ons
 
-This repository contains the following add-ons
+This repository contains the following add-ons.
 
 ### [Shairport Sync add-on](./shairport-sync)
-
