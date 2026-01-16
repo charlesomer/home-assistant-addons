@@ -11,16 +11,7 @@ arch:
 url: "https://github.com/charlesomer/home-assistant-addons/tree/main/shairport-sync"
 host_network: true
 # audio: true
-init: false
 image: "docker.io/mikebrady/shairport-sync"
 map:
-  - mode: rw
-    target: /etc/shairport-sync.conf
-    source: config
-options:
-  config: |
-    general = {
-      name = "Spare Room";
-    };
-schema:
-  config: "str"
+  - type: addon_config
+    path: /etc
