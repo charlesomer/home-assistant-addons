@@ -1,3 +1,4 @@
-FROM docker.io/mikebrady/shairport-sync
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 CMD [ "--sysconfdir=/addon_config" ]
