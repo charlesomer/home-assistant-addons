@@ -1,4 +1,4 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-CMD [ "--sysconfdir=/addon_config" ]
+CMD [ "--configfile=/addon_config/shairport-sync.conf" ]
