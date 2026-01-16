@@ -14,4 +14,4 @@ host_network: true
 image: "docker.io/mikebrady/shairport-sync"
 map:
   - type: addon_config
-    path: /etc
+    path: /shairport-sync
