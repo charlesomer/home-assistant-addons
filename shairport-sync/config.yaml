@@ -12,4 +12,5 @@ url: "https://github.com/charlesomer/home-assistant-addons/tree/main/shairport-s
 host_network: true
 map:
   - type: addon_config
+    path: /addon_config
 image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
