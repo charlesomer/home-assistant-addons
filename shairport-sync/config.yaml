@@ -13,4 +13,5 @@ host_network: true
 map:
   - type: addon_config
     read_only: True
+    path: /addon_config
 image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
