@@ -10,6 +10,7 @@ arch:
   - i386
 url: "https://github.com/charlesomer/home-assistant-addons/tree/main/shairport-sync"
 host_network: true
-image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
 map:
-  - addon_config:r
+  - type: addon_config
+    read_only: True
+image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
