@@ -1,6 +1,6 @@
 description: Shairport Sync add-on. AirPlay 2 audio player.
 name: Shairport Sync
-version: "0.0.8"
+version: "0.0.9"
 slug: shairport-sync
 arch:
   - armhf
@@ -16,7 +16,7 @@ map:
 image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
 
 options:
-  extra_args: ""
+  extra_args: "--configfile=/addon_config/shairport-sync.conf"
 
 schema:
   extra_args: "str?"
