@@ -14,3 +14,9 @@ map:
   - type: addon_config
     path: /addon_config
 image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
+
+options:
+  extra_args: ""
+
+schema:
+  extra_args: "str?"
