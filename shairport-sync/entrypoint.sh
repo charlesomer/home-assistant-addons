@@ -2,15 +2,17 @@
 
 set -e
 
-# Collect extra args from Home Assistant config (if set)
-EXTRA_ARGS=""
-if [ -n "$SUPERVISOR_OPTION_extra_args" ]; then
-    EXTRA_ARGS="$SUPERVISOR_OPTION_extra_args"
+STARTUP_FILE="/run.sh"
+if [ -n "$SUPERVISOR_OPTION_startup_file" ]; then
+    STARTUP_FILE="$SUPERVISOR_OPTION_startup_file"
 fi
 
-# If no arguments are passed, use the default CMD from the base image
-if [ "$#" -eq 0 ]; then
-    exec /init "$EXTRA_ARGS"
+# Split extra_args into positional parameters if set
+if [ -n "$SUPERVISOR_OPTION_extra_args" ]; then
+    # shellcheck disable=SC2086
+    set -- "$STARTUP_FILE" $SUPERVISOR_OPTION_extra_args
 else
-    exec "$@" "$EXTRA_ARGS"
+    set -- "$STARTUP_FILE"
 fi
+
+exec "$@"
