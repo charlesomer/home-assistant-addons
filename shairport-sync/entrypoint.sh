@@ -2,11 +2,6 @@
 
 set -e
 
-# Default startup file
-STARTUP_FILE="/run.sh"
+EXTRA_ARGS="${EXTRA_ARGS} ${SUPERVISOR_OPTION_extra_args}"
 
-# Use extra_args from Home Assistant config (config.yaml provides default)
-# shellcheck disable=SC2086
-set -- "$STARTUP_FILE" $SUPERVISOR_OPTION_extra_args
-
-exec "$@"
+exec /run.sh $EXTRA_ARGS
