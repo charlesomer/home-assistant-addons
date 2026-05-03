@@ -7,12 +7,9 @@ if [ -n "$SUPERVISOR_OPTION_startup_file" ]; then
     STARTUP_FILE="$SUPERVISOR_OPTION_startup_file"
 fi
 
-# Split extra_args into positional parameters if set
+EXTRA_ARGS="/run.sh"
 if [ -n "$SUPERVISOR_OPTION_extra_args" ]; then
-    # shellcheck disable=SC2086
-    set -- "$STARTUP_FILE" $SUPERVISOR_OPTION_extra_args
-else
-    set -- "$STARTUP_FILE"
+    EXTRA_ARGS="$SUPERVISOR_OPTION_extra_args"
 fi
 
-exec "$@"
+exec ${STARTUP_FILE} "${EXTRA_ARGS}"
