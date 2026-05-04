@@ -16,7 +16,9 @@ map:
 image: ghcr.io/charlesomer/ha-addon-shairport-sync-{arch}
 
 options:
-  extra_args: "--configfile=/addon_config/shairport-sync.conf"
+  configfile: "/addon_config/shairport-sync.conf"
+  help: false
 
 schema:
-  extra_args: "str?"
+  configfile: "str?"
+  help: "bool?"
