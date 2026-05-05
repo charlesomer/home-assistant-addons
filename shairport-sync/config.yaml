@@ -1,6 +1,6 @@
 description: Shairport Sync add-on. AirPlay 2 audio player.
 name: Shairport Sync
-version: "0.0.21"
+version: "0.0.22"
 slug: shairport-sync
 arch:
   - armhf
